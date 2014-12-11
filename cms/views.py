@@ -1,4 +1,3 @@
-from django.http import HttpResponse
 from django.shortcuts import render_to_response, get_object_or_404, redirect
 from django.template import RequestContext
 from django.views.generic import ListView
@@ -44,8 +43,8 @@ def book_del(request, book_id):
 
 class ImpressionList(ListView):
     """感想の一覧"""
-    context_object_name='impressions'
-    template_name='cms/impression_list.html'
+    context_object_name = 'impressions'
+    template_name = 'cms/impression_list.html'
     paginate_by = 2  # １ページは最大2件ずつでページングする
 
     def get(self, request, *args, **kwargs):
