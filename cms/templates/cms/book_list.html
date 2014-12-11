@@ -33,6 +33,7 @@ table {
           <td>
             <a href="{% url 'cms:book_mod' book_id=book.id %}" class="btn btn-default btn-sm">修正</a>
             <a href="{% url 'cms:book_del' book_id=book.id %}" class="btn btn-default btn-sm">削除</a>
+            <a href="{% url 'cms:impression_list' book_id=book.id %}" class="btn btn-default btn-sm btn-primary">感想の一覧</a>
           </td>
         </tr>
         {% endfor %}
