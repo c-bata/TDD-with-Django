@@ -1,0 +1,12 @@
+language: python
+python:
+  - "3.2"
+  - "3.3"
+  - "3.4"
+env:
+  SECRET_KEY=secretkey
+install:
+  - pip install -r requirements.txt
+script:
+  - python manage.py migrate
+  - python manage.py test
