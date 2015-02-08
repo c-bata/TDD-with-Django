@@ -1,3 +1,7 @@
+# TDD with Django
+
+[![Build Status](https://travis-ci.org/c-bata/TDD-with-Django.svg)](https://travis-ci.org/c-bata/TDD-with-Django)
+
 ## このリポジトリについて
 
 QiitaのDjango入門の記事をベースに、Djangoにおけるテストの書き方について勉強しました．
